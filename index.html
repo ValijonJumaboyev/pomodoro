@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Grimodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="title">START POMODORO CYCLE</h1>
+        <div class="timer-circle">
+            <div class="timer-length"></div>
+            <div class="timer-inside">
+                <p class="timer-count"><strong id="min">0</strong> : <strong id="sec">0</strong></p>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="work-minutes" class="input-label">Work (minutes):</label>
+            <input id="work-minutes" class="timer-input" type="number" min="1" placeholder="Work minutes" />
+            <label for="break-minutes" class="input-label">Break (minutes):</label>
+            <input id="break-minutes" class="break-input" type="number" min="1" placeholder="Break minutes" />
+        </div>
+        <button class="timer-btn">Start</button>
+        <script src="./index.js"></script>
+</body>
+
+</html>
